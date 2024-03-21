@@ -1,0 +1,18 @@
+Objects: The Cornerstone of JavaScript
+In JavaScript, objects are collections of key-value pairs, where keys are strings (or symbols) and values can be of any data type, including other objects, functions, arrays, or primitives. Objects are versatile entities that allow for flexible data manipulation and abstraction of complex structures.
+
+Under the Hood: Object Representation
+While JavaScript abstracts away many implementation details, it's beneficial to have a basic understanding of how objects are represented internally. In most JavaScript engines, objects are typically represented using one of two main strategies:
+
+Dictionary Representation: This approach is commonly used for objects with dynamic property names or properties that are added and removed frequently. In a dictionary representation, each object maintains a hash table (or similar data structure) to map property names to their corresponding values. While flexible, this representation incurs overhead due to hash table lookups and can be less efficient for property access compared to other representations.
+
+Classical Representation: Objects with a fixed set of properties or those created using constructor functions often utilize a classical representation. In this representation, objects are allocated contiguous blocks of memory with a fixed layout determined by the object's shape or class. This allows for faster property access and enables optimizations such as inline caching, where property access operations can be optimized based on the object's shape.
+
+Property Access and Optimization
+Efficient property access is critical for JavaScript performance, especially in performance-sensitive applications. JavaScript engines employ various optimization techniques to minimize the overhead of property access, including:
+
+Hidden Classes (or Shapes): JavaScript engines track the shape of objects and their properties to optimize property access. Objects with the same shape can share hidden classes, enabling optimizations such as inline caching and reducing memory overhead.
+
+Inline Caching: Inline caching optimizes property access by caching property lookup results based on the object's shape. This allows subsequent property accesses to bypass costly dictionary lookups or dynamic dispatch, resulting in faster execution.
+
+Property Access Techniques: JavaScript engines employ different techniques for property access, such as direct property access for objects with a known shape, prototype chaining for inheritance, and dynamic lookup for objects with dynamic properties.
