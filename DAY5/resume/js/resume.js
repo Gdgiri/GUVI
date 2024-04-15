@@ -1,4 +1,4 @@
-var resumeData = {
+var resumeData = [{
   "name": "Giri dharan",
   "email": "giridharan831@gmail.com",
   "phone": "+91 9715424895",
@@ -49,6 +49,6 @@ var resumeData = {
   ]
 
 
-};
+}];
 
 console.log("resumeData",resumeData);
